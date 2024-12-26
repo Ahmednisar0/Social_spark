@@ -38,9 +38,9 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`lg:flex hidden  space-x-4 text-gray-300 ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
-          <a href="#" className="hover:text-white">Home</a>
-          <a href="#" className="hover:text-white">Services</a>
-          <a href="#" className="hover:text-white">About Us</a>
+          <a href="/" className="hover:text-white">Home</a>
+          <a href="/services" className="hover:text-white">Services</a>
+          <a href="/about" className="hover:text-white">About Us</a>
         </div>
 
         {/* Contact Us Button (Visible on larger screens) */}
