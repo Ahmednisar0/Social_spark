@@ -4,7 +4,7 @@ import LastDiv from "@/components/lastdiv";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/services";
 import WhyChooseUs from "@/components/Whychoseup";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
