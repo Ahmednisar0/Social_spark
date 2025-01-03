@@ -52,9 +52,9 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-gray-700 text-white space-y-4 p-4 flex flex-col items-center">
-          <a href="#" className="block hover:text-white">Home</a>
-          <a href="#" className="block hover:text-white">Services</a>
-          <a href="#" className="block hover:text-white">About Us</a>
+          <a href="/" className="block hover:text-white">Home</a>
+          <a href="/services" className="block hover:text-white">Services</a>
+          <a href="about" className="block hover:text-white">About Us</a>
 
           {/* Contact Us Button inside Mobile Menu */}
           <button className="bg-[#9EFF00] text-black px-4 py-2 rounded hover:bg-green-500 block w-[200px] mt-4">
@@ -67,3 +67,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
