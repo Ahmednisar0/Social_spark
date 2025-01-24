@@ -4,12 +4,14 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Import Framer Motion
+import Link from 'next/link';
 
 interface Service {
   id: number;
   name: string;
   description: string;
   image: string;
+  slug: string
 }
 
 interface ServiceCategory {
@@ -77,13 +79,14 @@ const ServicesPage: React.FC = () => {
                   <img src={service.image} alt={service.name} className="lg:w-[330px] h-auto rounded-lg" />
                   <div className="flex space-x-2 mt-4">
                     <div className="w-4 h-4 mt-[5px] bg-blue-500 rounded-full"></div>
-                    <h3 className="text-xl font-bold mb-2">{service.name}</h3>
+                    <h3 className="text-xl font-bold text-black mb-2">{service.name}</h3>
                   </div>
                   <p className="text-gray-600 lg:h-[70px] mb-4">{service.description}</p>
-                  <button className="flex items-center border border-black px-4 py-2 text-black font-semibold hover:bg-black hover:text-white rounded-md">
-                    View More
+                 <button className="flex items-center border border-black px-4 py-2 text-black font-semibold hover:bg-black hover:text-white rounded-md">
+                <Link rel="stylesheet" href={'/services/'+service.slug}>     View More</Link>
                     <FaArrowRight className="ml-2 w-5 h-5" />
-                  </button>
+                  </button>  
+
                 </motion.div>
               ))}
             </div>

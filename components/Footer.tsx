@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaInstagram, FaPhone } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (<div className=' mt-10 ' >
@@ -30,24 +31,23 @@ const Footer: React.FC = () => {
         <div className="flex items-center space-x-3 border border-gray-300 p-4 rounded">
           <div className="flex space-x-3">
           <span className="ml-2 items-center flex">Stay Connected :</span>
-            <img
+      <Link href="https://www.facebook.com/profile.php?id=61571451759238&mibextid=wwXIfr&mibextid=wwXIfr">    <img
               src="/images/socialicon.png.png"
               alt="Social Icon 1"
               width={45}
               height={50}
-            />
-            <img
-              src="/images/socialicon1.png.png"
-              alt="Social Icon 2"
-              width={45}
-              height={50}
-            />
-            <img
+            /></Link> 
+         <a href="https://www.instagram.com/social_spark.?igsh=ODh2NHA4bndhcG5t&utm_source=qr" target="_blank" rel="noopener noreferrer">
+      <div className="flex items-center justify-center bg-gray-900 p-3 rounded-sm">
+        <FaInstagram size={30} color="#9EFF00" />
+      </div>
+    </a>
+    <Link href="https://www.linkedin.com/in/social-spark-638928348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">  <img
               src="/images/socialicon2.png.png"
               alt="Social Icon 3"
               width={45}
               height={50}
-            />
+            /></Link> 
           </div>
          
         </div>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         <div className="  flex flex-col lg:flex-row  items-start lg:space-x-4 ">
         <div className="flex items-center ml-[50px] lg:ml-0 lg:space-x-2  ">
           <FaEnvelope className='text-[#9EFF00]' />
-          <span className='text-gray-300'>socialspark@allrightreserved</span>
+          <span className='text-gray-300'>social.spark2629@gmail.com</span>
         </div>
         <div className="flex items-center ml-[50px] lg:ml-0 lg:space-x-2 ">
           <FaPhone className='text-[#9EFF00]' />
