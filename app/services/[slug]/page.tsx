@@ -2,7 +2,7 @@
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
-import { servicesData } from '../../api/services/route';// Import static data
+import { servicesData } from '@/app/api/services/route'; // Import static data
 import Footer from '@/components/Footer';
 
 export default function ServicePage({ params }: { params: { slug: string } }) {

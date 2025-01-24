@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Import Framer Motion
 import Link from 'next/link';
-
+import { servicesData } from '@/app/api/services/route';
 interface Service {
   id: number;
   name: string;
@@ -21,24 +21,8 @@ interface ServiceCategory {
 }
 
 const ServicesPage: React.FC = () => {
-  const [servicesData, setServicesData] = useState<ServiceCategory[]>([]);
+  
 
-  useEffect(() => {
-    const fetchServicesData = async () => {
-      try {
-        const response = await fetch('/api/services');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data: ServiceCategory[] = await response.json();
-        setServicesData(data);
-      } catch (error) {
-        console.error('Error fetching data: ', error);
-      }
-    };
-
-    fetchServicesData();
-  }, []);
 
   return (
     <div className="bg-gradient-to-b from-black via-[#93b858e0] min-h-screen">
