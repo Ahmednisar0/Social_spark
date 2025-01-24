@@ -1,7 +1,7 @@
 // /app/service/[slug]/page.tsx
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
-import Head from 'next/head';
+
 import { servicesData } from '@/app/api/services/route'; // Import static data
 import Footer from '@/components/Footer';
 
@@ -18,11 +18,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
   return (
     <div
-      className=" w-full"
-      style={{
-        background: 'radial-gradient(circle at 30% 30%, rgba(0,255,0,0.4) 10%, rgba(0,0,0,0) 40%)',
-      }}
-    >
+  className=" bg-black w-full"
+  style={{ backgroundImage: 'url(/images/bghome.png)' }}
+  
+>
+
 
       <Navbar />
       <div className="container lg:ml-[100px] mx-auto p-6 text-white">

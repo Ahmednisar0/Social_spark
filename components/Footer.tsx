@@ -21,9 +21,10 @@ const Footer: React.FC = () => {
 
       {/* Center: Navigation Links */}
       <nav className="flex space-x-8">
-        <a href="#home" className="hover:text-gray-300">Home</a>
-        <a href="#services" className="hover:text-gray-300">Services</a>
-        <a href="#aboutus" className="hover:text-gray-300">About Us</a>
+        <a href="/" className="hover:text-gray-300">Home</a>
+        <a href="/services" className="hover:text-gray-300">Services</a>
+        <a href="/aboutus" className="hover:text-gray-300">About Us</a>
+        <a href="/ourwork" className="hover:text-gray-300">Our Work</a>
       </nav>
 
       {/* Right side: Stay Connected */}
@@ -37,10 +38,17 @@ const Footer: React.FC = () => {
               width={45}
               height={50}
             /></Link> 
-         <a href="https://www.instagram.com/social_spark.?igsh=ODh2NHA4bndhcG5t&utm_source=qr" target="_blank" rel="noopener noreferrer">
-      <div className="flex items-center justify-center bg-gray-900 p-3 rounded-sm">
-        <FaInstagram size={30} color="#9EFF00" />
-      </div>
+         <a href="https://www.instagram.com/_social_spark._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+         <div
+  className="flex items-center justify-center p-3 rounded-sm"
+  style={{
+    background: 'linear-gradient(to bottom, #1f2937, #000000)', // gray-850 to black
+  }}
+>
+  <FaInstagram size={30} color="#9EFF00" />
+</div>
+
+
     </a>
     <Link href="https://www.linkedin.com/in/social-spark-638928348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">  <img
               src="/images/socialicon2.png.png"
@@ -64,7 +72,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex items-center ml-[50px] lg:ml-0 lg:space-x-2 ">
           <FaPhone className='text-[#9EFF00]' />
-          <span className='text-gray-300'>+1 234 567 890</span>
+          <span className='text-gray-300'>+44 7845 009381</span>
         </div>
       </div>
 

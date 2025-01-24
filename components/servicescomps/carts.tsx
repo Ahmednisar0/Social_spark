@@ -66,10 +66,10 @@ const ServicesPage: React.FC = () => {
                     <h3 className="text-xl font-bold text-black mb-2">{service.name}</h3>
                   </div>
                   <p className="text-gray-600 lg:h-[70px] mb-4">{service.description}</p>
-                 <button className="flex items-center border border-black px-4 py-2 text-black font-semibold hover:bg-black hover:text-white rounded-md">
-                <Link rel="stylesheet" href={'/services/'+service.slug}>     View More</Link>
+               <Link rel="stylesheet" href={'/services/'+service.slug}>    <button className="flex items-center border border-black px-4 py-2 text-black font-semibold hover:bg-black hover:text-white rounded-md">
+                   View More
                     <FaArrowRight className="ml-2 w-5 h-5" />
-                  </button>  
+                  </button>  </Link>
 
                 </motion.div>
               ))}

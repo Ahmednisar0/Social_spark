@@ -8,7 +8,7 @@ import WhyChooseUs from "@/components/Whychoseup";
 
 export default function Home() {
   return (
-    <div className="bg-gray-950">
+    <div className=" bg-gray-950">
       <Navbar/>
       <HeroSection />
       <Services />
