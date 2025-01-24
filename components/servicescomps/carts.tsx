@@ -6,6 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion'; // Import Framer Motion
 import Link from 'next/link';
 import { servicesData } from '@/app/api/services/route';
+import Image from 'next/image';
 interface Service {
   id: number;
   name: string;
@@ -60,7 +61,7 @@ const ServicesPage: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  <img src={service.image} alt={service.name} className="lg:w-[330px] h-auto rounded-lg" />
+                  <Image src={service.image} alt={service.name} className="lg:w-[330px] h-auto rounded-lg" />
                   <div className="flex space-x-2 mt-4">
                     <div className="w-4 h-4 mt-[5px] bg-blue-500 rounded-full"></div>
                     <h3 className="text-xl font-bold text-black mb-2">{service.name}</h3>
